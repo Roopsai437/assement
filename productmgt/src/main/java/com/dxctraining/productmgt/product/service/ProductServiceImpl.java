@@ -23,7 +23,7 @@ public class ProductServiceImpl implements IProductService {
 		if (!exist) {
 			throw new ProductNotFoundException("product not found for id=" + id);
 		}
-		Product products = optional.get();
+		Product product = optional.get();
 		return products;
 	}
 	
